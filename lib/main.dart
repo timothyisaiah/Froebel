@@ -28,22 +28,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: const MyHomePage(title: 'Froebel'),
+      home: const MyHomePage(title: 'FROEBEL'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   final String title;
 
@@ -100,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
       initialUrlRequest: URLRequest(
           url: Uri.parse('https://shopper.toweroflove.org/products'),
           headers: {},
-          method: 'POST'),
+          method: 'GET'),
       initialOptions: InAppWebViewGroupOptions(
         crossPlatform: InAppWebViewOptions(
             javaScriptEnabled: true, useOnDownloadStart: true),
@@ -179,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.yellow,
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[

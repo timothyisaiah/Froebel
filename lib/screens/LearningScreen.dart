@@ -60,8 +60,8 @@ class _LearningScreenState extends State<LearningScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('KINTU Learning Center'),
-        backgroundColor: Colors.blue,
+        title: Text('FROEBEL Learning Center'),
+        backgroundColor: Colors.yellow,
       ),
       body: InAppWebView(
         initialUrlRequest: URLRequest(

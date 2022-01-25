@@ -62,15 +62,15 @@ class ShopScreenState extends State<ShopScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('KINTU Learning Center'),
-        backgroundColor: Colors.blue,
+        title: Text('FROEBEL Learning Center'),
+        backgroundColor: Colors.yellow,
       ),
       body: InAppWebView(
         initialUrlRequest: URLRequest(
             url: Uri.parse('https://shopper.toweroflove.org/products'),
             // url: Uri.parse('https://www.toweroflove.org/product/'),
             headers: {},
-            method: 'POST'),
+            method: 'GET'),
         initialOptions: InAppWebViewGroupOptions(
           crossPlatform: InAppWebViewOptions(
               javaScriptEnabled: true, useOnDownloadStart: true),

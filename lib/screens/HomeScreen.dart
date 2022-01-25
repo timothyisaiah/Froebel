@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Column(
               children: <Widget>[
                 Image(
-                  image: AssetImage('./assets/images/kintu.png'),
+                  image: AssetImage('./assets/images/froebel.png'),
                   height: 180,
                   width: 150,
                 ),
@@ -107,9 +107,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                //   ],
-                // ),
-                Expanded(
+                // Expanded(
+                SizedBox(
+                  height: 600,
                   child: GridView.count(
                     shrinkWrap: true,
                     primary: true,
@@ -136,7 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.yellow,
     );
   }
 }
